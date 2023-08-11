@@ -9,8 +9,6 @@ class UserService {
   async findUserByEmail(email) {
     const user = await this.repository.findOne({ email })
 
-    console.log('User Map', this.map.toDto(user))
-
     return user != null
       ? {
           _id: user.id,
