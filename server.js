@@ -12,19 +12,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 const PORT = process.env.PORT || 3000;
 
-
-//const MONGO_URI = 'mongodb+srv://admin:Master4321.@cluster0.rv3ez.mongodb.net/electroapps';
-
-// Connect to MongoDB
-//mongoose.connect(MONGO_URI, {
-//  useNewUrlParser: true,
-//  useUnifiedTopology: true,
-//});
-
-
-//const Openchargemap = mongoose.model('Openchargemap', Openchargemap);
-//const Electrolinera = mongoose.model('Electrolinera', electrolinerasSchema);
-
 // Define API routes
 app.get('/openchargemap', async (req, res) => {
   try {
