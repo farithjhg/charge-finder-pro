@@ -22,6 +22,15 @@ app.get('/openchargemap', async (req, res) => {
   }
 });
 
+app.get('/', async (req, res) => {
+  try {
+    const data = {message: 'Site is available!'};
+    res.json(data);
+  } catch (error) {
+    res.status(500).json({ error: 'Server error:'+error });
+  }
+});
+
 /*
 app.get('/electrolineras', async (req, res) => {
   try {
