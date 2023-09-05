@@ -1,14 +1,17 @@
 {
-  "name": "my-chargers-app",
+  "name": "charger-finder-pro",
   "version": "1.0.0",
-  "description": "My Car Chargers App",
-  "main": "index.js",
+  "description": "My Car Charger Finder App",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "build": "npm install",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["heroku"],
   "author": "",
   "license": "ISC",
   "dependencies": {
